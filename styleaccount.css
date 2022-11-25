@@ -1,0 +1,490 @@
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: #ddd;
+}
+                     
+
+
+h1{
+    font-weight: lighter;
+    font-family: 'Montserrat', sans-serif;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.1em;
+    font-weight: 300;
+    line-height: 1.7em;
+    color: #000;
+}
+
+a,
+a:hover,
+a:focus {
+    text-align: center;
+    color: #000;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+#red{
+    color: red;
+}
+#login{
+    color: #000;
+}
+
+.navbar {
+    padding: 15px 10px;
+    background: #fff;
+    border: none;
+    border-radius: 0;
+    margin-bottom: 40px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.navbar-btn {
+    box-shadow: none;
+    outline: none !important;
+    border: none;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px dashed #ddd;
+    margin: 40px 0;
+}
+
+.lineside{
+    width: 200px;
+    height: 2px;
+    background-color: #ddd;
+    display: block;
+    content: " ";
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+/* ---------------------------------------------------
+    SIDEBAR STYLE
+----------------------------------------------------- */
+
+.wrapper {
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+}
+
+#sidebar {
+    min-width: 250px;
+    max-width: 250px;
+    text-align: center;
+    background: #fff;
+    color: #000;
+    transition: all 0.3s;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+.sidebar-header img{
+    width: 220px;
+    height: 147px;
+}
+#sidebarCollapse{
+    visibility: hidden;
+}
+#sidebar.active {
+    margin-left: -250px;
+}
+
+#sidebar .sidebar-header {
+    padding: 20px;
+    background: #fff;
+}
+
+#sidebar a{
+    color: #6e6e6e;
+}
+
+#sidebar ul p {
+    color: #fff;
+    padding: 0px;
+}
+
+#sidebar ul li a {
+    padding: 10px;
+    font-size: 1.1em;
+    display: block;
+}
+
+
+#sidebar ul li a:hover { text-decoration: none; }
+
+#sidebar ul li a:hover{
+    transition: all 0.3s ease-in-out 0s;
+    color: #000;
+    background: #ddd;
+}
+
+
+
+#sidebar ul li.active>a,
+a[aria-expanded="true"] {
+    color: #fff;
+    background: #8D8D8D;
+}
+
+a[data-toggle="collapse"] {
+    position: relative;
+}
+
+.dropdown-toggle::after {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+ul ul a {
+    font-size: 0.9em !important;
+    padding-left: 30px !important;
+    background: #ddd;
+}
+
+
+
+
+
+.media i{
+    text-decoration-color: #6e6e6e;
+}
+
+.media ul{
+    display: flex;
+    position: absolute;
+    margin-left: 0%;;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.media ul li{
+    list-style: none;
+}
+
+.media ul li a{
+    width: 50px;
+    height: 50px;
+    background: #fff;
+    text-align: center;
+    font-size: 35px;
+    color: #000;
+    margin: 0 5px;
+    display: block;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    border: 3px solid #000;
+}
+
+.media ul li a i{
+    position: relative;
+    color: #6e6e6e;
+    transform: .5s;
+}
+
+.media ul li a:hover i{
+    color: #fff;
+    transform: rotateY(360deg);
+    -webkit-transform: rotateY(360deg);
+    transition-duration: 1.5s;
+    -webkit-transition-duration:1s;
+}
+
+.media ul li a:before{
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #f00;
+    transition: .5s;
+}
+
+.media ul li a:hover:before{
+    top: 0;
+}
+
+.media ul li:nth-child(1) a:before{
+    background: #3b5999;
+}
+.media ul li:nth-child(2) a:before{
+    background: #e4405f;
+}
+.media ul li:nth-child(3) a:before{
+    background: #cd201f;
+}
+
+/* ---------------------------------------------------
+    Zajecia
+----------------------------------------------------- */
+#calendar_group #day{
+    border: none;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+#calendar_group h1{
+    margin: auto;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+#calendar_group input{
+    margin: 5px;
+}
+#calendar_indyvidual #day{
+    border: none;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+#calendar_indyvidual h1{
+    margin: auto;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+
+#calendar_indyvidual input{
+    margin: 5px;
+}
+    
+    
+#activities_add{
+    text-align: center;
+    
+}
+
+
+
+/* ---------------------------------------------------
+    Aktualności
+----------------------------------------------------- */
+
+
+.box0_info {
+    text-align: center;
+    padding: 20px;
+    color: black;
+    background-color: #fff;
+      width: 100%;
+      height: 100%;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+    filter: invert(100%);
+}
+/* ---------------------------------------------------
+    kontakt
+----------------------------------------------------- */
+
+#contact p{
+    margin-top: 30px;
+    color: #000;
+    font-size: 18px;
+    text-align: center;
+}
+#contact h2{
+    margin-top: 15px;
+}
+
+
+
+/* ---------------------------------------------------
+    mail
+----------------------------------------------------- */
+
+
+#contact form{
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+#contact form input{
+    margin-top: 2px;
+}
+
+#contact form textarea{
+    margin-top: 2px;
+    min-height: 100px;
+    max-height: 150px;
+}
+
+/* ---------------------------------------------------
+    main
+----------------------------------------------------- */
+#news {
+    text-align: center;
+    color: black;
+    background: transparent;
+}
+
+
+
+#news_table #info_add{
+    height: 100%;
+}
+
+#news_table form input{
+    margin-top: 1px;
+}
+#news_table form textarea{
+    padding: 20px;
+    height: 50%;
+}
+
+
+th{
+  position: sticky;
+  top: 0;
+
+}
+
+.table-responsive{
+    max-height: 200px;
+    overflow: scroll;
+
+}
+
+/* ---------------------------------------------------
+    CONTENT STYLE
+----------------------------------------------------- */
+
+#content {
+    width: 100%;
+    min-height: 100vh;
+    transition: all 0.3s;
+}
+#content #text{
+    margin: 10px;
+}
+
+#content #contact{
+    min-height: 40px;
+    margin: 10px;
+    text-align: center;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+#content #users_1{
+    min-height: 40px;
+    margin: auto;
+    text-align: center;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+#content #payments_1{
+    min-height: 40px;
+    margin: 5px;
+    text-align: center;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+#content #activities_1{
+    min-height: 40px;
+    margin: auto;
+    text-align: center;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+#content #activities_add{
+    min-height: 40px;
+    margin: 10;
+    text-align: center;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+#content #trainer_add{
+    min-height: 40px;
+    margin: 10px;
+    text-align: center;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+#content .container{
+    min-height: 40px;
+    text-align: center;
+    background: #fff;
+    width: 100%;
+    padding: 40px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+
+
+#content #news{
+    margin: 10px;
+    text-align: center;
+    background: #fff;
+    padding: 10px;
+    min-height: 220px;
+    height: 100%;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+#content #info{
+    min-height: 100px;
+    margin: 10px;
+    text-align: center;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+#content #news_table{
+    margin: 10px;
+    text-align: center;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+/* ---------------------------------------------------
+    Users
+----------------------------------------------------- */
+
+#update_form input{
+    margin: 5px;
+}
+#update_form #off{
+    background: #ddd
+}
+
+
+/* ---------------------------------------------------
+    MEDIAQUERIES
+----------------------------------------------------- */
+
+@media (max-width: 768px) {
+    #sidebarCollapse{
+    visibility: visible;
+}
+    #sidebar {
+        margin-left: -250px;
+    }
+    #sidebar.active {
+        margin-left: 0;
+    }
+    #sidebarCollapse span {
+        display: none;
+    }
+}
